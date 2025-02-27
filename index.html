@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicias Dulces - Repostería Casera</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="logo" id="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chef-hat">
+            <path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 1.05-1.54 5 5 0 0 1 7.08 0A5.11 5.11 0 0 1 16.59 6 4 4 0 0 1 18 13.87V21H6Z"></path>
+            <line x1="6" x2="18" y1="17" y2="17"></line>
+          </svg>
+          <h1>Delicias Dulces</h1>
+        </div>
+        <nav class="desktop-nav">
+          <a href="#" class="nav-link" id="home-link">Inicio</a>
+          <a href="#recipes" class="nav-link">Recetas</a>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+            <line x1="4" x2="20" y1="12" y2="12"></line>
+            <line x1="4" x2="20" y1="6" y2="6"></line>
+            <line x1="4" x2="20" y1="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-nav" id="mobile-nav">
+        <a href="#" class="nav-link" id="mobile-home-link">Inicio</a>
+        <a href="#recipes" class="nav-link" id="mobile-recipes-link">Recetas</a>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Hero Section (will be shown on homepage) -->
+      <section class="hero" id="hero-section">
+        <h1>Repostería Casera</h1>
+        <p>Descubre deliciosas recetas de postres tradicionales para preparar en casa</p>
+        <a href="#recipes" class="btn-primary">Ver Recetas</a>
+      </section>
+
+      <!-- Recipes Section (will be shown on homepage) -->
+      <section class="recipes-section" id="recipes">
+        <h2>Nuestras Recetas</h2>
+        <div class="recipes-grid" id="recipes-grid">
+          <!-- Recipe cards will be inserted here by JavaScript -->
+        </div>
+      </section>
+
+      <!-- Recipe Detail Section (will be shown when a recipe is selected) -->
+      <section class="recipe-detail" id="recipe-detail">
+        <!-- Recipe detail content will be inserted here by JavaScript -->
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2025 Delicias Dulces - Todos los derechos reservados</p>
+    </footer>
+  </div>
+
+  <script src="recipes.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
